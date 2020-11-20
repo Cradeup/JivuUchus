@@ -1,0 +1,39 @@
+.Postpar{
+    margin-top: 10px;
+
+}
+
+.postImg {
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.PostList{
+    background-color: #FFFFFF;
+    width: 500px;
+    border-radius: 10px;
+}
+
+.post{
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+}
+
+.postName{
+    margin: 5px;
+    margin-top: 20px;
+}
+
+.postImg{
+    margin: 5px;
+}
+
+.poststyle{
+    margin: 10px;
+}
+
+.poststat{
+    margin-left: 10px;
+}

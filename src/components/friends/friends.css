@@ -1,0 +1,12 @@
+.frinedslist{
+    display: column;
+}
+
+.friendelement{
+    border-bottom: 1px solid #111111;
+}
+
+.friendimg{
+    width: 80px;
+    border-radius: 50%;
+}
