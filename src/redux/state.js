@@ -1,3 +1,6 @@
+let ADD_POST = 'ADD-POST'
+let UPDATE_NEW_POST = 'UPDATE-NEW-POST'
+
 let store = {
     _state: {
 
@@ -45,7 +48,7 @@ let store = {
     },
 
     dispatch(action) {
-        if (action.type === 'ADD-POST') {
+        if (action.type === ADD_POST) {
             let newPost = {
                 message: this._state.profilePage.newPostText,
                 likes: 0,
@@ -55,10 +58,23 @@ let store = {
             this._state.profilePage.postsdata.push(newPost);
             this._state.profilePage.newPostText = '';
             this._renderEntireTree(this._state);
-        } else if (action.type === 'UPDATE-NEW-POST') {
+        } else if (action.type === UPDATE_NEW_POST) {
             this._state.profilePage.newPostText = action.postText
             this._renderEntireTree(this._state);
         }
+    }
+}
+
+export const addPostActionCreator = () => {
+    return {
+        type: 'ADD-POST'
+    }
+}
+
+export const upadteNewPostActionCreator = (text) => {
+
+    return {
+        type: 'UPDATE-NEW-POST', postText: text
     }
 }
 
