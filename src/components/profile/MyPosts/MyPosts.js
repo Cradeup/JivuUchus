@@ -9,7 +9,7 @@ const MyPosts = (props) => {
 
     let addPost = () => {
         debugger;
-        props.dispatch({type: 'ADP-POST'})
+        props.dispatch({type: 'ADD-POST'})
         
     }
 
