@@ -47,7 +47,7 @@ let store = {
     },
     _renderEntireTree() {
     },
-    allSubscribe(observer) {
+    Subscribe(observer) {
         this._renderEntireTree = observer;
     },
 

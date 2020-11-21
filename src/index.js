@@ -20,7 +20,10 @@ let _renderEntireTree = () => {
 
 _renderEntireTree(store.getState());
 
-store.allSubscribe(_renderEntireTree);
+store.Subscribe(() => { 
+    let state = store.getState()
+    _renderEntireTree(state)
+});
 
 
 // If you want to start measuring performance in your app, pass a function
